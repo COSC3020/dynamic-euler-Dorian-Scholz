@@ -17,3 +17,5 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+Answer: The worst case Θ time complexity of the algorithm for approximating e is Θ(n). This is because the algorithm uses a single for loop that iterates from 0 to n. With each iteration performing constant time operations.

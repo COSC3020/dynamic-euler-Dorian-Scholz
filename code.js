@@ -1,9 +1,21 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
+function factorial(n)
+{
+    let result = 1;
+    for (let i = 1; i <= n; i++) 
+    {
+        result *= i;
+    }
+    return result;
 }
 
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+    let result = 0;
+    for (let i = 0; i <= n; i++)
+    {
+        result += 1 / factorial(i); 
+    }
+    return result;
 }
+
+
+console.log(e(10)); 

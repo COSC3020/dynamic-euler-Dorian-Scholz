@@ -17,3 +17,5 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+Answer: The worst case Θ time complexity of the updated algorithm is Θ(n^2). This arises from the nested nature of the operations in the e function, which calls the factorial function during each iteration. The factorial function calculates the factorial of i by performing O(i) operations for the ith term. Since the e function iterates from 0 to n the total work involves summing O(1)+O(2)+O(3)+...+O(n), which equals O(n^2). 
